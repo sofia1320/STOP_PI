@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #1c3255 50%, #f1f1f1 50%);
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.top-text {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.form-section {
+    background-color: #f1f1f1;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 40px 20px;
+    margin-top: 80px;
+}
+
+.form-section h6 {
+    font-weight: 550;
+    text-align: center;
+    color: #1c3255;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.btn-custom {
+    background: linear-gradient(to right, #1c2b4d, #2d4b8a);
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.btn-custom:hover {
+    opacity: 0.9;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #1c3255;
+}
+
+.login-link a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #1c3255;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>STOP - Progresso</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylePAG.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+  <div class="container py-4">
+
+    <div class="counter-box">
+      <div class="counter-center">
+        <div id="counter-days" class="counter-days">0</div>
+        <div class="counter-label">DIAS</div>
+        <div id="counter-time" class="counter-time">00:00:00</div>
+      </div>
+
+      <div class="logo-box">
+        <button aria-label="Recomeçar">
+          <img src="LogoBranco.png" id="button-recomeçar" alt="Ícone Recomeçar" />
+        </button>
+      </div>
+    </div>
+
+    <div class="diario-box mb-4">
+      <div class="d-flex align-items-center mb-2 gap-2 flex-wrap">
+        <h5 class="mb-0">Diário</h5>
+        <button id="adicionarEntradaBtn" class="btn btn-success btn-sm ms-2" title="Adicionar entrada"
+          style="font-size: 1.5rem; line-height: 1; padding: 0.2em 0.6em;">+</button>
+        <input type="date" id="diarioDataPicker" class="form-control ms-2" style="max-width: 180px;">
+      </div>
+      <form id="formEntradaDiario" class="mb-4" style="display:none;">
+        <div class="mb-2">
+          <textarea id="textoEntrada" class="form-control" placeholder="Escreve a tua entrada..." required></textarea>
+        </div>
+        <div class="mb-2">
+          <input type="file" id="imagemEntrada" accept="image/*" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <button type="button" id="cancelarEntrada" class="btn btn-secondary">Cancelar</button>
+      </form>
+      <div class="row g-2"></div>
+    </div>
+
+    <button class="motivation-btn mb-5">Dá-me motivação!</button>
+  </div>
+
+  <div class="bottom-nav">
+    <a class="nav-item" href="ProgressoU.html">Início</a>
+    <a class="nav-item" href="comunidade.html">Comunidade</a>
+    <div class="nav-item">Apoio</div>
+    <a class="nav-item" href="perfilU.html">Perfil</a>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

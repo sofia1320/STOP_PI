@@ -1,0 +1,421 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.counter-box {
+    background: linear-gradient(to bottom, #2e4a7d, #1c2d4e);
+    color: white;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    min-height: 180px;
+}
+
+.counter-center {
+    text-align: center;
+    width: 100%;
+}
+
+.counter-days {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.counter-label {
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-top: -10px;
+}
+
+.counter-time {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.logo-box {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-box button {
+    background-color: rgb(70, 99, 149);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    padding: 0;
+}
+
+.logo-box button:hover {
+    background-color: rgb(53, 76, 117);
+}
+
+.logo-box button img {
+    height: 60px;
+    width: 60px;
+}
+
+.logo-box span {
+    color: red;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    user-select: none;
+}
+
+.diario-box {
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: transparent;
+}
+
+.diario-entry {
+    min-height: 100px;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.image-space {
+    background-color: #dcdcdc;
+    border-radius: 12px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.motivation-btn {
+    width: 100%;
+    background: linear-gradient(to bottom, #2e4a7d, #1c2d4e);
+    color: white;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.motivation-btn:hover {
+    background: linear-gradient(to bottom, #3e5b99, #263b60);
+    transform: scale(1.03);
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 8px 0;
+}
+
+.bottom-nav .nav-item {
+    color: #222 !important;
+    text-decoration: none !important;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-nav .nav-item:hover,
+.bottom-nav .nav-item:focus {
+    color: #2e4a7d !important;
+    /* Azul escuro no hover, opcional */
+    text-decoration: none !important;
+}
+
+.bottom-nav .nav-link {
+    color: #2e4a7d;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-decoration: none;
+}
+
+.bottom-nav .nav-link:hover {
+    text-decoration: none;
+    color: #1c2d4e;
+}
+
+@media (max-width: 768px) {
+    .counter-days {
+        font-size: 60px;
+    }
+
+    .counter-time {
+        font-size: 28px;
+    }
+
+    .logo-box button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-box button img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .logo-box span {
+        font-size: 12px;
+    }
+}
+
+#adicionarEntradaBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0;
+    background-color: #2e4a7d;
+    /* Bootstrap azul */
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+#formEntradaDiario .btn-success {
+    background-color: #2e4a7d;
+    border-color: #2e4a7d;
+    color: #fff;
+    transition: background 0.2s, border 0.2s;
+}
+
+
+.task-card {
+    border-radius: 12px;
+    /* Podes ajustar o valor para mais ou menos arredondado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.task-card span,
+.task-card .task-text {
+    color: #1c2d4e !important;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+#addTaskBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0;
+    background-color: #2e4a7d;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s;
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    text-decoration: none !important;
+}
+
+#addTaskBtn:hover,
+#addTaskBtn:focus {
+    background-color: #1c2d4e;
+    color: #fff;
+    outline: none;
+}
+
+.titulo-lembretes,
+.titulo-lembretes h5,
+h5.fw-bold.text-primary {
+    padding-left: 24px;
+    color: #1c2d4e !important;
+}
+
+.btn-remover-task {
+    background: none;
+    border: none;
+    color: #dc3545;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-remover-task:hover,
+.btn-remover-task:focus {
+    color: #a71d2a;
+    outline: none;
+    background: none;
+    box-shadow: none;
+}
+
+#user {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-publicar-fixo {
+    position: fixed;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    width: 40%;
+    max-width: 400px;
+    background-color: #2e4a7d;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 14px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    z-index: 300;
+    transition: background 0.2s;
+}
+
+.btn-publicar-fixo:hover,
+.btn-publicar-fixo:focus {
+    background-color: #1c2d4e;
+    color: #fff;
+    outline: none;
+}
+
+#publicacoes-list {
+    margin-top: 40px;
+}
+
+.btn-comentar {
+    color: #1c2d4e !important;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s;
+    box-shadow: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-comentar:hover,
+.btn-comentar:focus {
+    color: #163052 !important;
+    outline: none;
+    background: none;
+    box-shadow: none;
+}
+
+.form-comentario .input-comentario {
+    margin-bottom: 14px;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 80px; 
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.update-account-btn {
+    background: linear-gradient(90deg, #0c0c46, #343280);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.profile-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #343280; 
+    background: #f5f5f5;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upload-btn-plus {
+    background: #fff !important; 
+    color: #0c0c46 !important;
+    border-radius: 25px;
+    border: 1px solid #0c0c46;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.upload-btn-plus input[type="file"] {
+    display: none;
+}
+
+.logout-account-btn {
+    background: #f4f4f4;
+    color: 343280;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STOP - Login </title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styleLOGIN.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="LogoBranco.png" alt="STOP Logo">
+    </div>
+
+    <div class="form-container">
+        <div class="form-title">É bom ter-te de volta!</div>
+        <form id="loginForm">
+            <div class="form-group">
+                <i class="bi bi-envelope input-icon"></i>
+                <input type="email" class="form-control" id="loginEmail" placeholder="Email" required autocomplete="email">
+            </div>
+            <div class="form-group">
+                <i class="bi bi-lock input-icon"></i>
+                <input type="password" class="form-control" id="loginPassword" placeholder="Password" required autocomplete="current-password">
+            </div>
+            <div>
+                <input type="radio" id="tipoUtente" name="tipoPerfil" value="utente" checked>
+                <label for="tipoUtente">Utente</label>
+                <input type="radio" id="tipoProfissional" name="tipoPerfil" value="profissional">
+                <label for="tipoProfissional">Profissional</label>
+            </div>
+            <button type="submit" class="btn btn-custom">Login</button>
+        </form>
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
